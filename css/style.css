@@ -1,0 +1,182 @@
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+.clearfix {
+    display: inline-block;
+}
+
+
+a {
+	color: green;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}
+ 
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
+
+body {
+	font-size: 16px;
+	color: #444;
+	font-family: Verdana, Arial;
+}
+
+.color-picker
+{
+	position: relative;
+	left: 52.2%;
+	width: 60px;
+}
+.color-picker div {
+	top: 4px;
+	left: 4px;
+	width: 28px;
+	height: 28px;
+	background: url(../plugins/colorPicker/images/select2.png) center;
+}
+
+.form-line {
+	margin: 20px 0px;
+}
+
+.form-line input[type = text] {
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	padding: 5px;
+	width: 300px;
+	margin-top: -3px;
+}
+
+.page {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	background: #eaeaea;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+	margin-bottom: 40px;
+}
+
+.dmca-footer-code textarea {
+	width: 90%;
+	padding: 20px 5%;
+	background: #666;
+	color: #ccc;
+	border-radius: 10px;
+	margin: auto;
+	display: block;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.footer-maker-form label {
+	display: block;
+	float: left;
+	width: 50%;
+	text-align: right;
+	padding-right: 20px;
+}
+
+.protection-badges,
+.country-flags {
+	background: white;
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.9);
+	border-radius: 5px;
+	padding: 20px;
+	margin: 20px;
+	position: fixed;
+	top: 100px;
+	left: 300px;
+	right: 300px;
+	bottom: 100px;
+	overflow: scroll;
+
+	z-index: 100;
+}
+
+.protection-badges div {
+	float: left;
+	margin: 0px 10px 10px 0px;
+	width: 157px;
+}
+
+.close-badges-trigger,
+.close-country-flags-trigger {
+	background: black;
+	border: 3px solid white;
+	display: block;
+	position: fixed;
+	z-index: 110;
+	top: 110px;
+	right: 310px;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+	width: 25px;
+	height: 20px;
+	text-align: center;
+	padding-bottom: 5px;
+	border-radius: 20px;
+	display: block;
+	padding-bottom: 26px;
+	padding-right: 19px;
+	padding-left: 7px;
+	color: white;
+}
+
+.close-badges-trigger:hover,
+.close-country-flags-trigger:hover {
+	color: white;
+}
+
+.protection-badges-overlay,
+.country-flags-overlay {
+	opacity: 0.5;
+	position: fixed;
+	background: black;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+
+.badges,
+.flags {
+	display: none;
+}
+
+.protection-badges img.selected,
+.country-flags div.selected {
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
+}
+
+.protection-badges img {
+	height: 32px;
+}
+
+.linkback-image,
+.badge-image {
+	margin-top: -4px !important;
+}
